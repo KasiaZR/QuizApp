@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">QuizApp</string>
+    <string name="first_question">What connects to BMW motorcycles? \n(multiple choice answer)</string>
+    <string name="second_question">Which motorcycle company is this?</string>
+    <string name="third_question">Is the Isle of Man TT race lasted from 1909?</string>
+    <string name="fourth_question">Which motorcycle company is this?</string>
+    <string name="fifth_question">The first Polish motorcycle was:</string>
+    <string name="checkbox_one">Boxer engine</string>
+    <string name="checkbox_two">Germany</string>
+    <string name="checkbox_three">V engine</string>
+    <string name="checkbox_four">Norway</string>
+    <string name="checkbox_five">Cardan shaft</string>
+    <string name="checkbox_six">Quads</string>
+    <string name="hint">Type your answer here</string>
+    <string name="radio_button_yes">Yes</string>
+    <string name="radio_button_no">No</string>
+    <string name="radio_button_sokol">Sokół</string>
+    <string name="radio_button_lech">Lech</string>
+    <string name="radio_button_cws">CWS M55</string>
+    <string name="radio_button_wsk">WSK</string>
+    <string name="submit">Submit</string>
 </resources>
