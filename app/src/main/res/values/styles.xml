@@ -6,4 +6,17 @@
         <!-- Background color of buttons in the app -->
         <item name="colorButtonNormal">#ff5c5c</item>
     </style>
+
+    <style name="motoquiz_app">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="motoquiz_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
 </resources>
