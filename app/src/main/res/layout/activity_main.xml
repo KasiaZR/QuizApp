@@ -28,7 +28,7 @@
                 android:layout_marginStart="16dp"
                 android:paddingLeft="24dp"
                 android:text="@string/checkbox_one"
-                android:textSize="16sp" />
+                android:textSize="@dimen/text_size_checkbox" />
 
 
             <CheckBox
@@ -38,7 +38,7 @@
                 android:layout_marginStart="16dp"
                 android:paddingLeft="24dp"
                 android:text="@string/checkbox_two"
-                android:textSize="16sp" />
+                android:textSize="@dimen/text_size_checkbox" />
 
 
             <CheckBox
@@ -48,7 +48,7 @@
                 android:layout_marginStart="16dp"
                 android:paddingLeft="24dp"
                 android:text="@string/checkbox_three"
-                android:textSize="16sp" />
+                android:textSize="@dimen/text_size_checkbox" />
 
 
             <CheckBox
@@ -58,7 +58,7 @@
                 android:layout_marginStart="16dp"
                 android:paddingLeft="24dp"
                 android:text="@string/checkbox_four"
-                android:textSize="16sp" />
+                android:textSize="@dimen/text_size_checkbox" />
 
 
             <CheckBox
@@ -68,7 +68,7 @@
                 android:layout_marginStart="16dp"
                 android:paddingLeft="24dp"
                 android:text="@string/checkbox_five"
-                android:textSize="16sp" />
+                android:textSize="@dimen/text_size_checkbox" />
 
 
             <CheckBox
@@ -78,7 +78,7 @@
                 android:layout_marginStart="16dp"
                 android:paddingLeft="24dp"
                 android:text="@string/checkbox_six"
-                android:textSize="16sp" />
+                android:textSize="@dimen/text_size_checkbox" />
 
             <View
                 android:layout_width="match_parent"
@@ -93,7 +93,7 @@
                 android:layout_marginTop="24dp"
                 android:text="@string/second_question"
                 android:textColor="@android:color/black"
-                android:textSize="16sp" />
+                android:textSize="@dimen/text_size" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -126,7 +126,7 @@
                 android:layout_marginTop="24dp"
                 android:text="@string/third_question"
                 android:textColor="@android:color/black"
-                android:textSize="16sp" />
+                android:textSize="@dimen/text_size" />
 
             <RadioGroup
                 android:id="@+id/radio_group_isle_of_man"
@@ -140,7 +140,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:text="@string/radio_button_yes"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/text_size"
                     android:textAppearance="?android:textAppearanceMedium" />
 
                 <RadioButton
@@ -149,7 +149,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:text="@string/radio_button_no"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/text_size"
                     android:textAppearance="?android:textAppearanceMedium" />
             </RadioGroup>
 
@@ -166,7 +166,7 @@
                 android:layout_marginTop="24dp"
                 android:text="@string/fourth_question"
                 android:textColor="@android:color/black"
-                android:textSize="16sp" />
+                android:textSize="@dimen/text_size" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -208,7 +208,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:text="@string/radio_button_lech"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/text_size"
                     android:textAppearance="?android:textAppearanceMedium" />
 
                 <RadioButton
@@ -217,7 +217,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:text="@string/radio_button_sokol"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/text_size"
                     android:textAppearance="?android:textAppearanceMedium" />
 
                 <RadioButton
@@ -226,7 +226,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:text="@string/radio_button_cws"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/text_size"
                     android:textAppearance="?android:textAppearanceMedium" />
 
                 <RadioButton
@@ -235,7 +235,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:text="@string/radio_button_wsk"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/text_size"
                     android:textAppearance="?android:textAppearanceMedium" />
             </RadioGroup>
 

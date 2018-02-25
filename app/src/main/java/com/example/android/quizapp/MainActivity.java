@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
             score++;
         }
 
-        final String resultMaxScore = getString(R.string.winner_toast_label);
+        final String resultMaxScore = getString(R.string.winner_toast_label, MAX_SCORE);
         final String resultBelowScore = getString(R.string.below_toast_label, score);
 
         /***
