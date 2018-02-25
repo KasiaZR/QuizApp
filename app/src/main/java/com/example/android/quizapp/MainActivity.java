@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void resetScore() {
+    public void resetScore() {
 
         checkBoxTrue1.setChecked(false);
         checkBoxTrue2.setChecked(false);
@@ -74,18 +74,10 @@ public class MainActivity extends AppCompatActivity {
     public void submit(final View view) throws InterruptedException {
 
         /**
-         * 1 st answer contains 3 incorrect answers (3rd,4th,6th), if they selected 0 point to score
+         * 1 st answer contains 3 correct answers (1st,2nd,5th), if they selected +1 point to score
          */
 
-        if (checkBoxFalse1.isChecked() || (checkBoxFalse2.isChecked()) || (checkBoxFalse3.isChecked())) {
-            score += 0;
-
-            /**
-             * 1 st answer contains 3 correct answers (1st,2nd,5th), if they selected +1 point to score
-             */
-
-
-        } else if (checkBoxTrue1.isChecked() && (checkBoxTrue2.isChecked()) && (checkBoxTrue3.isChecked())) {
+        if (checkBoxTrue1.isChecked() && (checkBoxTrue2.isChecked()) && (checkBoxTrue3.isChecked())) {
             score++;
         }
 
@@ -93,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
          * 2 nd answer is 'Ducati', if it's correct +1 point to score
          */
 
-        if ("ducati".equalsIgnoreCase(DUCATI)) {
+        if (editTextDucati.getText().toString().equalsIgnoreCase(DUCATI)) {
             score++;
         }
 
@@ -110,12 +102,12 @@ public class MainActivity extends AppCompatActivity {
          */
 
 
-        if ("motoguzzi".equalsIgnoreCase(MOTOGUZZI)) {
+        if (editTextMotoGuzzi.getText().toString().equalsIgnoreCase(MOTOGUZZI)) {
             score++;
         }
 
-        /***5th aswer is 'Lech', if it's correct +1 point to score
-         * 3rd answer is 'No', if it's correct +1 point to score
+        /***
+         * 5th aswer is 'Lech', if it's correct +1 point to score
          */
 
         if (radioButtonLech.isChecked()) {
@@ -126,13 +118,13 @@ public class MainActivity extends AppCompatActivity {
         final String resultMaxScore = "Your score is " + MAX_SCORE + "/5\nCongratulations, you're a 100% motocyclist!";
         final String resultBelowScore = "You scored " + score + "/5\nIt was close. Try again!";
 
+
         /***
          * If someone get maximum points, display a toast message
          */
         if (score == MAX_SCORE) {
             Toast.makeText(this, resultMaxScore, Toast.LENGTH_LONG).show();
 
-            Thread.sleep(3000);
             resetScore();
 
             /***
@@ -140,9 +132,8 @@ public class MainActivity extends AppCompatActivity {
              */
 
         } else if (score < 5) {
-                Toast.makeText(this, resultBelowScore, Toast.LENGTH_LONG).show();
+            Toast.makeText(this, resultBelowScore, Toast.LENGTH_LONG).show();
 
-            Thread.sleep(3000);
             resetScore();
         }
 
