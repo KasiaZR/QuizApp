@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     RadioButton radioButtonLech;
 
     private static final String DUCATI = "ducati";
-    private static final String MOTOGUZZI = "motoguzzi";
+    private static final String MOTOGUZZI = "moto guzzi";
 
 
     @Override
@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
         radioGroupIsleOfMan.clearCheck();
         editTextDucati.setText(null);
         editTextMotoGuzzi.setText(null);
+        score = 0;
     }
 
 
@@ -113,7 +114,6 @@ public class MainActivity extends AppCompatActivity {
         if (radioButtonLech.isChecked()) {
             score++;
         }
-
 
         final String resultMaxScore = "Your score is " + MAX_SCORE + "/5\nCongratulations, you're a 100% motocyclist!";
         final String resultBelowScore = "You scored " + score + "/5\nIt was close. Try again!";
