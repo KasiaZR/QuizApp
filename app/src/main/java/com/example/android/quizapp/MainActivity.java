@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
     private static final String DUCATI = "ducati";
     private static final String MOTOGUZZI = "moto guzzi";
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,9 +37,7 @@ public class MainActivity extends AppCompatActivity {
         initializeGuiElements();
     }
 
-
     protected void initializeGuiElements() {
-
         checkBoxTrue1 = findViewById(R.id.checkbox_one);
         checkBoxTrue2 = findViewById(R.id.checkbox_two);
         checkBoxFalse1 = findViewById(R.id.checkbox_three);
@@ -53,11 +50,9 @@ public class MainActivity extends AppCompatActivity {
         editTextMotoGuzzi = findViewById(R.id.fourth_guzzi_question);
         radioGroupFirstMotorcycle = findViewById(R.id.radio_group_first_motorcycle);
         radioButtonLech = findViewById(R.id.lech_radio_button);
-
     }
 
     public void resetScore() {
-
         checkBoxTrue1.setChecked(false);
         checkBoxTrue2.setChecked(false);
         checkBoxTrue3.setChecked(false);
@@ -71,14 +66,16 @@ public class MainActivity extends AppCompatActivity {
         score = 0;
     }
 
-
     public void submit(final View view) throws InterruptedException {
 
         /**
          * 1 st answer contains 3 correct answers (1st,2nd,5th), if they selected +1 point to score
          */
 
-        if (checkBoxTrue1.isChecked() && (checkBoxTrue2.isChecked()) && (checkBoxTrue3.isChecked())) {
+        if (checkBoxFalse1.isChecked() || (checkBoxFalse2.isChecked()) || (checkBoxFalse3.isChecked())) {
+            score = 0;
+
+        } else if (checkBoxTrue1.isChecked() && (checkBoxTrue2.isChecked()) && (checkBoxTrue3.isChecked())) {
             score++;
         }
 
@@ -115,9 +112,8 @@ public class MainActivity extends AppCompatActivity {
             score++;
         }
 
-        final String resultMaxScore = "Your score is " + MAX_SCORE + "/5\nCongratulations, you're a 100% motocyclist!";
-        final String resultBelowScore = "You scored " + score + "/5\nIt was close. Try again!";
-
+        final String resultMaxScore = getString(R.string.winner_toast_label);
+        final String resultBelowScore = getString(R.string.below_toast_label, score);
 
         /***
          * If someone get maximum points, display a toast message
@@ -136,8 +132,5 @@ public class MainActivity extends AppCompatActivity {
 
             resetScore();
         }
-
-
     }
-
 }

@@ -19,4 +19,6 @@
     <string name="radio_button_cws">CWS M55</string>
     <string name="radio_button_wsk">WSK</string>
     <string name="submit">Submit</string>
+    <string name="below_toast_label">You scored score %1$d/5\nIt was close. Try again!</string>
+    <string name="winner_toast_label">Your score is %1$d/5\nCongratulations, you\'re a 100% motorcyclist!</string>
 </resources>
